@@ -1,7 +1,6 @@
 #
 # macros.txt
 # This file stores the macro definitions, parameters and options for mod_macros
-#
 
 # Version number of the mod which saved this file. ***Do not alter this value!***
 version=1320
