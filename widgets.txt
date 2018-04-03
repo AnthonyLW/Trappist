@@ -1,0 +1,136 @@
+
+[
+  {
+    "Background": false,
+    "name": "Title",
+    "enabled": false,
+    "x": 2,
+    "y": 2,
+    "glue": "TOP_AND_LEFT"
+  },
+  {
+    "Minimum width": 100.0,
+    "Order": [
+      {
+        "name": "Visual",
+        "description": "Mods for Visual."
+      },
+      {
+        "name": "Combat",
+        "description": "Mods for Combat."
+      },
+      {
+        "name": "Misc",
+        "description": "Mods for Misc."
+      },
+      {
+        "name": "Movement",
+        "description": "Mods for Movement."
+      },
+      {
+        "name": "Mining",
+        "description": "Mods for Mining."
+      }
+    ],
+    "Animations": true,
+    "name": "Tabbed menu",
+    "enabled": false,
+    "x": 2,
+    "y": 14,
+    "glue": "WidgetGlue(Title, 2)"
+  },
+  {
+    "name": "Notifications",
+    "enabled": false,
+    "x": 581,
+    "y": 2,
+    "glue": "TOP_AND_RIGHT"
+  },
+  {
+    "Background": false,
+    "name": "Coordinates",
+    "enabled": false,
+    "x": 2,
+    "y": 372,
+    "glue": "BOTTOM_AND_LEFT"
+  },
+  {
+    "Intercardinal": false,
+    "Width": 90.0,
+    "name": "Compass",
+    "enabled": false,
+    "x": 251,
+    "y": 2,
+    "glue": "CENTER_TOP"
+  },
+  {
+    "Background": false,
+    "name": "FPS",
+    "enabled": false,
+    "x": 2,
+    "y": 2,
+    "glue": "NONE"
+  },
+  {
+    "Names": false,
+    "Waypoints": true,
+    "Entity mode": 0,
+    "name": "Minimap",
+    "enabled": false,
+    "x": 553,
+    "y": 254,
+    "glue": "BOTTOM_AND_RIGHT"
+  },
+  {
+    "Background": false,
+    "name": "Biome",
+    "enabled": false,
+    "x": 2,
+    "y": 2,
+    "glue": "NONE"
+  },
+  {
+    "Background": false,
+    "name": "Time",
+    "enabled": false,
+    "x": 0,
+    "y": 0,
+    "glue": "NONE"
+  },
+  {
+    "Background": false,
+    "name": "Armor Status",
+    "enabled": false,
+    "x": 660,
+    "y": 150,
+    "glue": "CENTER_RIGHT"
+  },
+  {
+    "Background": false,
+    "Distance": 255.0,
+    "name": "Text Radar",
+    "enabled": true,
+    "x": 2,
+    "y": 2,
+    "glue": "NONE"
+  },
+  {
+    "Background": false,
+    "name": "Facing",
+    "enabled": false,
+    "x": 0,
+    "y": 0,
+    "glue": "NONE"
+  },
+  {
+    "Background": false,
+    "Style": 2,
+    "List organization": 2,
+    "Mod color": 0,
+    "name": "Enabled mods",
+    "enabled": true,
+    "x": 615,
+    "y": 370,
+    "glue": "BOTTOM_AND_RIGHT"
+  }
+]

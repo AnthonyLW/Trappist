@@ -1,0 +1,675 @@
+[
+  {
+    "Displayable": true,
+    "Display Color": {
+      "r": 255,
+      "g": 187,
+      "b": 65,
+      "a": 255
+    },
+    "displayName": "Waypoints",
+    "Distance": true,
+    "Custom font": false,
+    "Icon": true,
+    "Lines": false,
+    "Background": false,
+    "Death points": false,
+    "Scale": true,
+    "Scale Amount": 1.2,
+    "Opacity": 100.0,
+    "name": "Waypoints",
+    "enabled": false
+  },
+  {
+    "Displayable": true,
+    "Display Color": {
+      "r": 255,
+      "g": 95,
+      "b": 252,
+      "a": 255
+    },
+    "Keybind": 47,
+    "displayName": "ESP",
+    "Players": true,
+    "Mobs": true,
+    "Animals": true,
+    "Invisible": true,
+    "Lines": true,
+    "Properties": false,
+    "Check age": false,
+    "Mode": 1,
+    "Opacity": 100.0,
+    "name": "ESP",
+    "enabled": false
+  },
+  {
+    "Displayable": true,
+    "Display Color": {
+      "r": 191,
+      "g": 37,
+      "b": 153,
+      "a": 255
+    },
+    "Keybind": -1,
+    "displayName": "Nametags",
+    "Armor": true,
+    "Enchants": true,
+    "Ping": false,
+    "Invisible": true,
+    "Scale": true,
+    "Health": 3,
+    "Scale Amount": 2.0,
+    "Opacity": 0.0,
+    "name": "Nametags",
+    "enabled": true
+  },
+  {
+    "Displayable": true,
+    "Display Color": {
+      "r": 255,
+      "g": 87,
+      "b": 142,
+      "a": 255
+    },
+    "Keybind": -1,
+    "displayName": "Storage ESP",
+    "Boxes": true,
+    "Border": true,
+    "Lines": false,
+    "Fade": false,
+    "Enabled blocks": [
+      {
+        "id": 0
+      }
+    ],
+    "name": "Storage ESP",
+    "enabled": false
+  },
+  {
+    "Displayable": true,
+    "Display Color": {
+      "r": 255,
+      "g": 255,
+      "b": 41,
+      "a": 255
+    },
+    "Keybind": -1,
+    "displayName": "Crash",
+    "Lines": true,
+    "Landing": true,
+    "Arrows": true,
+    "Landing size": 0.5,
+    "name": "Projectiles",
+    "enabled": false
+  },
+  {
+    "Displayable": true,
+    "Display Color": {
+      "r": 255,
+      "g": 187,
+      "b": 61,
+      "a": 255
+    },
+    "Keybind": -1,
+    "displayName": "Xray",
+    "Xray blocks": [],
+    "name": "Xray",
+    "enabled": false
+  },
+  {
+    "Displayable": true,
+    "Display Color": {
+      "r": 255,
+      "g": 185,
+      "b": 255,
+      "a": 255
+    },
+    "Keybind": -1,
+    "displayName": "Brightness",
+    "name": "Brightness",
+    "enabled": true
+  },
+  {
+    "Displayable": true,
+    "Display Color": {
+      "r": 82,
+      "g": 181,
+      "b": 153,
+      "a": 255
+    },
+    "Keybind": -1,
+    "displayName": "Breadcrumb",
+    "Lines": true,
+    "Bread": true,
+    "Clear on death": true,
+    "Opacity": 50.0,
+    "Distance": 15.0,
+    "Bounce": 0.0,
+    "name": "Breadcrumb",
+    "enabled": false
+  },
+  {
+    "Displayable": true,
+    "Display Color": {
+      "r": 253,
+      "g": 250,
+      "b": 19,
+      "a": 255
+    },
+    "Keybind": -1,
+    "displayName": "Auto potion",
+    "Swap Delay": 0.0,
+    "Use Delay": 470.0,
+    "Health": 8.0,
+    "Use Potions": true,
+    "name": "Auto potion",
+    "enabled": false
+  },
+  {
+    "Displayable": true,
+    "Display Color": {
+      "r": 255,
+      "g": 191,
+      "b": 238,
+      "a": 255
+    },
+    "Keybind": -1,
+    "displayName": "Auto armor",
+    "Attempt Delay": 200.0,
+    "Enchantment Priority": [
+      {
+        "enchantmentId": 0
+      },
+      {
+        "enchantmentId": 4
+      },
+      {
+        "enchantmentId": 1
+      },
+      {
+        "enchantmentId": 3
+      },
+      {
+        "enchantmentId": 7
+      }
+    ],
+    "name": "Auto armor",
+    "enabled": false
+  },
+  {
+    "Displayable": true,
+    "Display Color": {
+      "r": 186,
+      "g": 17,
+      "b": 153,
+      "a": 255
+    },
+    "Keybind": 19,
+    "displayName": "Kill aura",
+    "Players": true,
+    "Mobs": true,
+    "Animals": true,
+    "Invisible": true,
+    "Silent": true,
+    "Random misses": false,
+    "Interact": false,
+    "Smart attack": true,
+    "Entity selection": false,
+    "Check age": true,
+    "Attack Priority": 0,
+    "Strength": 10.0,
+    "Speed": 15.0,
+    "Reach": 5.0,
+    "FOV": 20.0,
+    "Rotation rate": 7.0,
+    "Speed randomization": 0.0,
+    "Strength randomization": 0.0,
+    "name": "Kill aura",
+    "enabled": false
+  },
+  {
+    "Displayable": true,
+    "Display Color": {
+      "r": 255,
+      "g": 185,
+      "b": 248,
+      "a": 255
+    },
+    "Keybind": -1,
+    "displayName": "Bow aimbot",
+    "Reach": 128.0,
+    "Silent": true,
+    "Players": true,
+    "Mobs": true,
+    "Animals": true,
+    "Invisible": true,
+    "Check age": false,
+    "name": "Bow aimbot",
+    "enabled": false
+  },
+  {
+    "Displayable": true,
+    "Display Color": {
+      "r": 255,
+      "g": 219,
+      "b": 109,
+      "a": 255
+    },
+    "Keybind": -1,
+    "displayName": "Criticals",
+    "name": "Criticals",
+    "enabled": false
+  },
+  {
+    "Displayable": true,
+    "Display Color": {
+      "r": 255,
+      "g": 119,
+      "b": 134,
+      "a": 255
+    },
+    "displayName": "Chat mutator",
+    "Speech Therapist": true,
+    "Dolan Speak": true,
+    "Educated": false,
+    "Speedy Gonzales": false,
+    "Flanders": false,
+    "Spell Check": false,
+    "L33t Speak": false,
+    "Aesthetic": false,
+    "Emoticon": true,
+    "Sdrawkcab": false,
+    "Ramisme": false,
+    "name": "Chat mutator",
+    "enabled": false
+  },
+  {
+    "Displayable": true,
+    "Display Color": {
+      "r": 253,
+      "g": 185,
+      "b": 213,
+      "a": 255
+    },
+    "Keybind": -1,
+    "displayName": "Timer",
+    "Multiplier": 1.0,
+    "name": "Timer",
+    "enabled": false
+  },
+  {
+    "Displayable": true,
+    "Display Color": {
+      "r": 255,
+      "g": 253,
+      "b": 167,
+      "a": 255
+    },
+    "Keybind": -1,
+    "displayName": "Auto disconnect",
+    "Health": 11.5,
+    "name": "Auto disconnect",
+    "enabled": false
+  },
+  {
+    "Displayable": true,
+    "Display Color": {
+      "r": 251,
+      "g": 16,
+      "b": 153,
+      "a": 255
+    },
+    "Keybind": -1,
+    "displayName": "Auto fish",
+    "name": "Auto fish",
+    "enabled": false
+  },
+  {
+    "Displayable": true,
+    "Display Color": {
+      "r": 127,
+      "g": 29,
+      "b": 153,
+      "a": 255
+    },
+    "Keybind": -1,
+    "displayName": "Respawn",
+    "name": "Respawn",
+    "enabled": false
+  },
+  {
+    "Displayable": true,
+    "Display Color": {
+      "r": 253,
+      "g": 187,
+      "b": 57,
+      "a": 255
+    },
+    "displayName": "Middle click friends",
+    "name": "Middle click friends",
+    "enabled": true
+  },
+  {
+    "Displayable": true,
+    "Display Color": {
+      "r": 255,
+      "g": 173,
+      "b": 228,
+      "a": 255
+    },
+    "Keybind": -1,
+    "displayName": "Chest stealer",
+    "name": "Chest stealer",
+    "enabled": false
+  },
+  {
+    "Displayable": true,
+    "Display Color": {
+      "r": 255,
+      "g": 63,
+      "b": 72,
+      "a": 255
+    },
+    "Keybind": -1,
+    "displayName": "Retard",
+    "Yaw mode": 0,
+    "Pitch mode": 0,
+    "name": "Retard",
+    "enabled": false
+  },
+  {
+    "Displayable": true,
+    "Display Color": {
+      "r": 255,
+      "g": 249,
+      "b": 88,
+      "a": 255
+    },
+    "Keybind": -1,
+    "displayName": "Anti knockback",
+    "Combat mode": false,
+    "Combat time": 10000.0,
+    "Percentage": 100.0,
+    "name": "Anti knockback",
+    "enabled": false
+  },
+  {
+    "Displayable": true,
+    "Display Color": {
+      "r": 255,
+      "g": 171,
+      "b": 254,
+      "a": 255
+    },
+    "Keybind": -1,
+    "displayName": "Speed",
+    "Bunny hop": false,
+    "Stairs": false,
+    "Mode": 1,
+    "Ground speed": 10.0,
+    "Air speed": 10.0,
+    "name": "Speed",
+    "enabled": false
+  },
+  {
+    "Displayable": true,
+    "Display Color": {
+      "r": 255,
+      "g": 143,
+      "b": 23,
+      "a": 255
+    },
+    "Keybind": 48,
+    "displayName": "Scaffold",
+    "Distance ": 4.0,
+    "Mode": 0,
+    "name": "Scaffold",
+    "enabled": false
+  },
+  {
+    "Displayable": true,
+    "Display Color": {
+      "r": 253,
+      "g": 187,
+      "b": 14,
+      "a": 255
+    },
+    "Keybind": 48,
+    "displayName": "Safewalk",
+    "name": "Safewalk",
+    "enabled": false
+  },
+  {
+    "Displayable": true,
+    "Display Color": {
+      "r": 254,
+      "g": 253,
+      "b": 110,
+      "a": 255
+    },
+    "Keybind": -1,
+    "displayName": "Dolphin",
+    "name": "Dolphin",
+    "enabled": false
+  },
+  {
+    "Displayable": true,
+    "Display Color": {
+      "r": 171,
+      "g": 44,
+      "b": 153,
+      "a": 255
+    },
+    "Keybind": -1,
+    "displayName": "Fast ladder",
+    "name": "Fast ladder",
+    "enabled": false
+  },
+  {
+    "Displayable": true,
+    "Display Color": {
+      "r": 253,
+      "g": 253,
+      "b": 232,
+      "a": 255
+    },
+    "Keybind": -1,
+    "displayName": "Flight",
+    "Speed": 1.0,
+    "name": "Flight",
+    "enabled": false
+  },
+  {
+    "Displayable": true,
+    "Display Color": {
+      "r": 221,
+      "g": 218,
+      "b": 153,
+      "a": 255
+    },
+    "Keybind": 33,
+    "displayName": "Freecam",
+    "Speed": 2.0,
+    "name": "Freecam",
+    "enabled": false
+  },
+  {
+    "Displayable": true,
+    "Display Color": {
+      "r": 171,
+      "g": 48,
+      "b": 153,
+      "a": 255
+    },
+    "Keybind": -1,
+    "displayName": "Glide",
+    "name": "Glide",
+    "enabled": false
+  },
+  {
+    "Displayable": true,
+    "Display Color": {
+      "r": 235,
+      "g": 252,
+      "b": 153,
+      "a": 255
+    },
+    "Keybind": -1,
+    "displayName": "Nofall",
+    "name": "Nofall",
+    "enabled": false
+  },
+  {
+    "Displayable": true,
+    "Display Color": {
+      "r": 253,
+      "g": 187,
+      "b": 59,
+      "a": 255
+    },
+    "Keybind": -1,
+    "displayName": "Sneak",
+    "name": "Sneak",
+    "enabled": false
+  },
+  {
+    "Displayable": true,
+    "Display Color": {
+      "r": 190,
+      "g": 59,
+      "b": 153,
+      "a": 255
+    },
+    "Keybind": -1,
+    "displayName": "Spider",
+    "name": "Spider",
+    "enabled": false
+  },
+  {
+    "Displayable": true,
+    "Display Color": {
+      "r": 171,
+      "g": 226,
+      "b": 153,
+      "a": 255
+    },
+    "Keybind": -1,
+    "displayName": "Step",
+    "Height": 10.0,
+    "name": "Step",
+    "enabled": false
+  },
+  {
+    "Displayable": true,
+    "Display Color": {
+      "r": 253,
+      "g": 187,
+      "b": 240,
+      "a": 255
+    },
+    "Keybind": 34,
+    "displayName": "Nuker",
+    "Radius": 5.0,
+    "Mine delay": 0.0,
+    "Distance check": false,
+    "Silent": true,
+    "name": "Nuker",
+    "enabled": false
+  },
+  {
+    "Displayable": true,
+    "Display Color": {
+      "r": 255,
+      "g": 247,
+      "b": 253,
+      "a": 255
+    },
+    "Keybind": -1,
+    "displayName": "Auto farm",
+    "Radius": 5.0,
+    "Mine delay": 0.0,
+    "Place delay": 0.0,
+    "Distance check": false,
+    "Silent": true,
+    "Mode": 0,
+    "name": "Auto farm",
+    "enabled": false
+  },
+  {
+    "Displayable": true,
+    "Display Color": {
+      "r": 250,
+      "g": 61,
+      "b": 153,
+      "a": 255
+    },
+    "Keybind": -1,
+    "displayName": "Smasher",
+    "Radius": 5.0,
+    "Mine delay": 0.0,
+    "Silent": true,
+    "name": "Smasher",
+    "enabled": false
+  },
+  {
+    "Displayable": true,
+    "Display Color": {
+      "r": 255,
+      "g": 87,
+      "b": 253,
+      "a": 255
+    },
+    "Keybind": -1,
+    "displayName": "Replica",
+    "Place delay": 100.0,
+    "Silent": true,
+    "Template": 0,
+    "name": "Replica",
+    "enabled": false
+  },
+  {
+    "Displayable": true,
+    "Display Color": {
+      "r": 253,
+      "g": 187,
+      "b": 16,
+      "a": 255
+    },
+    "Keybind": -1,
+    "displayName": "Fast place",
+    "Speed": 4.0,
+    "name": "Fast place",
+    "enabled": false
+  },
+  {
+    "Displayable": true,
+    "Display Color": {
+      "r": 253,
+      "g": 249,
+      "b": 228,
+      "a": 255
+    },
+    "Keybind": -1,
+    "displayName": "Auto tool",
+    "Swap weapon": true,
+    "Combat time": 1000.0,
+    "name": "Auto tool",
+    "enabled": true
+  },
+  {
+    "Displayable": true,
+    "Display Color": {
+      "r": 254,
+      "g": 153,
+      "b": 247,
+      "a": 255
+    },
+    "Keybind": -1,
+    "displayName": "Speedmine",
+    "Mine speed": 2.0,
+    "Break Percent": 100.0,
+    "No Slowdown": true,
+    "name": "Speedmine",
+    "enabled": false
+  }
+]

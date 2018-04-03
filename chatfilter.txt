@@ -1,0 +1,783 @@
+{
+  "chatMessages": [
+    {
+      "name": "Trappist",
+      "message": "*Your appetite was*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*HeadHunting\u003e\u003e*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*Want access to new kits*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*Ranked players get a Private*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*Warning Ground items will be*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*The faction**was disbanded*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*Check out**YouTube channel!*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*[saicobans]*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*Only Admins have the ability*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*Last Online in*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "User:*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*You ready your fists*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*You lower your fists*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*We now use Discord! Join our*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*You\u0027ve been summoned,**to SaicoPvP!*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*Purge the realms of the Evil Overlord!*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*Shop store.saicopvp.com*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*Forums saicopvp.com/forums*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*TeamSpeak ts.saicopvp.com*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "Age: *",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "Joining: *",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "(!) You have no new mail.",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*[mcMMO] www.spigotmc.org/resources/mcmmo.2445/ - mcMMO Website*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*[mcMMO] Running version 1.5.04-SNAPSHOT-b${BUILD_NUMBER}*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "TP",
+      "message": "*HashTrap has requested*",
+      "except": "",
+      "servers": [],
+      "action": "AUTO_TEXT",
+      "useRegex": false,
+      "autoText": "/tpyes HashTrap",
+      "autoTextDelay": 20
+    },
+    {
+      "name": "Trappist",
+      "message": "*A realm ravaged by a demonic plague...*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*(!) You have been summoned to the...*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*(!) While you were offline*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "\u003e\u003e\u003e",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "You are already here!",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*Dont fancy walking around? Use /wild t*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*disco**nne**ct 7**k*",
+      "except": "",
+      "servers": [],
+      "action": "AUTO_TEXT",
+      "useRegex": false,
+      "autoText": ".toggle Projectiles",
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*Follow us on Twitter for the latest*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "You\u0027ve been summoned,**to SaicoPvP!",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*Message of the Day ].__*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*A update has happened*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*Cactus is farmed by placing a Crop*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*Rolled*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*You can only use this bucket on*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*saicovaults*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*Gain Faction-wide perks by*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*You have teleported to your prev*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*HashTrap has requested to teleport to you!*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*Follow us on TwiTter for*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*The Overlord**Chest has Spawned in the center*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*Slay player near the chest to*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*The PvP Arena will be inaccessible when*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*Slay players near the chest to Enhance it*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*Found an issue**Report it on our*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*The PvP Area can**be entered*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*They gained the Bloody*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*reepersEdge to follow their faction adventures!*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*Unlock unique and powerful equipment a*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*Once your Mask is level V*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*Want to suggest a new feature or change*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*WarZone does not allow*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*Remember to get proof of rai*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*Want to trade items with someone else*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*can be blown up with 4x TNT*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*Spawners cannot be found nat*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*Read our rules to en*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*Server is rebooting! Redirecting you to the hub*",
+      "except": "",
+      "servers": [],
+      "action": "AUTO_TEXT",
+      "useRegex": false,
+      "autoText": "/server zombie",
+      "autoTextDelay": 6000
+    },
+    {
+      "name": "Trappist",
+      "message": "*Server is rebooting! Redirecting you to the hub*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*[HashRate]*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*es: None*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*ALT of swift*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "None*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*Want to trade items*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*To toggle chat*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*rate walls*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*more votes untill*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*more votes*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*left combat*",
+      "except": "",
+      "servers": [],
+      "action": "PLAY_SOUND",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*has requested to teleport*",
+      "except": "",
+      "servers": [],
+      "action": "NOTIFY",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*HashTrap** teleport request*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "You have**area.",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "[**Realm] [HashTrap** tpc",
+      "except": "",
+      "servers": [],
+      "action": "AUTO_TEXT",
+      "useRegex": false,
+      "autoText": "/tpyes",
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "(!)**HashTrap accepted your teleport request!",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "(!) You sent a teleportation request to**HashTrap!",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "[Zombie Realm] [HashTrap -\u003e me] dis3",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "--------------------[Zombie Realm]--------------------",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "[+]*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*tpc3*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*dis3*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "(!) You sold**Melon**",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*(!) Server is rebooting in*",
+      "except": "",
+      "servers": [],
+      "action": "AUTO_TEXT",
+      "useRegex": false,
+      "autoText": "/server zombie",
+      "autoTextDelay": 6000
+    }
+  ]
+}

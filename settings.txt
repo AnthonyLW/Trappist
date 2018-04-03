@@ -1,0 +1,56 @@
+[
+  {
+    "Line Size": 1.0,
+    "Line Smooth": true,
+    "Infinite Lines": true,
+    "Custom Chat Font": false,
+    "Custom Menu Font": false,
+    "Theme": 0,
+    "Menu Color": {
+      "r": 255,
+      "g": 0,
+      "b": 0,
+      "a": 255
+    },
+    "Team": 0,
+    "Look Manager": [
+      {
+        "name": "Auto potion"
+      },
+      {
+        "name": "Kill aura"
+      },
+      {
+        "name": "Bow aimbot"
+      },
+      {
+        "name": "Nuker"
+      },
+      {
+        "name": "Auto farm"
+      },
+      {
+        "name": "Smasher"
+      },
+      {
+        "name": "Replica"
+      },
+      {
+        "name": "Scaffold"
+      },
+      {
+        "name": "Retard"
+      }
+    ],
+    "Hotbar Manager": [
+      {
+        "name": "Auto potion"
+      },
+      {
+        "name": "Auto tool"
+      }
+    ],
+    "Menu Key": 54,
+    "First Use": false
+  }
+]
