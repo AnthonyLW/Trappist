@@ -778,6 +778,42 @@
       "useRegex": false,
       "autoText": "/server zombie",
       "autoTextDelay": 6000
+    },
+    {
+      "name": "Trappist",
+      "message": "*Adventurer**.*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*Adventurer**,*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*Adventurer**play*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*Adventurer**free *",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
     }
   ]
 }
