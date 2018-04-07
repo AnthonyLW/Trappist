@@ -226,7 +226,7 @@ script.warn.permissions.enabled=0
 #
 
 # KEY_I
-Macro[23].Macro=$${IF(@sell);LOG("&7AutoSell: &c&lOFF");UNSET(@sell);STOP;ELSE;LOG("&7AutoSell: &a&lON");SET(@sell);DO;PICK(cactus);ECHO(/sell chest);WAIT(1200);WHILE(@sell);LOOP;ENDIF;}$$
+Macro[23].Macro=$${IF(@sell);LOG("&7AutoSell: &c&lOFF");UNSET(@sell);STOP;ELSE;LOG("&7AutoSell: &a&lON");SET(@sell);DO;PICK(cactus);ECHO(/sell chest);WAIT(2);ECHO(/server zombie);WAIT(1200);WHILE(@sell);LOOP;ENDIF;}$$
 
 # KEY_K
 Macro[37].Macro=$${LOG(&7&oScaning...);LOG(&7&oIf there is nothing after this then there are no staff);WAIT(10t);ECHO(/list);}$$
