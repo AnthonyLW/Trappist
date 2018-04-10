@@ -1,0 +1,40 @@
+$${
+IFMATCHES(%CHATCLEAN%,".*Staff Online.*.*Sr. M.*")
+LOG(&b&7&m-------------&8[&fTrappist-1&8]&7&m-------------)
+LOG(&cWARNING: &eStaff with '/vanish' perm are online)
+LOG(&7&oIt is suggested that you limit usage of cheats)
+ENDIF
+IFMATCHES(%CHATCLEAN%,".*Staff Online.*.*Admin.*")
+LOG(&b&7&m-------------&8[&fTrappist-1&8]&7&m-------------)
+LOG(&cWARNING: &eStaff with '/vanish' perm are online)
+LOG(&7&oIt is suggested that you limit usage of cheats)
+ENDIF
+IFMATCHES(%CHATCLEAN%,".*Staff Online.*.*Manag.*")
+LOG(&b&7&m-------------&8[&fTrappist-1&8]&7&m-------------)
+LOG(&cWARNING: &eStaff with '/vanish' perm are online)
+LOG(&7&oIt is suggested that you limit usage of cheats)
+ENDIF
+IFCONTAINS(%CHATCLEAN%,"[Zombie Realm] [HashTrap -> me] tpc3")
+WAIT(3)
+ECHO(/tpahere HashTrap)
+ENDIF
+IFCONTAINS(%CHATCLEAN%,"[Zombie Realm] [HashTrap -> me] dis3")
+DISCONNECT()
+ENDIF
+IFCONTAINS(%ITEM%,"_axe")
+IFCONTAINS(%CHATCLEAN%,"Your inventory is full so items are dropping")
+&item = %INVSLOT%
+WAIT(2t)
+PICK(melon)
+WAIT(2t)
+ECHO(/sell hand all)
+WAIT(4)
+ECHO(/server zombie)
+WAIT(2t)
+SLOT(%&item%)
+ENDIF
+ENDIF
+IFCONTAINS(%CHATCLEAN%,"[Zombie Realm] [HashTrap -> me] cac3")
+EXEC(bal.txt,remote)
+ENDIF
+}$$
