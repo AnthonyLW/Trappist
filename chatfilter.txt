@@ -1,7 +1,7 @@
 {
   "chatMessages": [
     {
-      "name": e"Trappist",
+      "name": "Trappist",
       "message": "*Your appetite was*",
       "except": "",
       "servers": [],
@@ -218,17 +218,80 @@
     },
     {
       "name": "TP",
-      "message": "*HashTrap has requested*",
+      "message": "*BitcoinVirus has requested*",
       "except": "",
       "servers": [],
       "action": "AUTO_TEXT",
       "useRegex": false,
-      "autoText": "/tpyes HashTrap",
+      "autoText": "/tpyes BitcoinVirus",
       "autoTextDelay": 20
     },
     {
       "name": "Trappist",
       "message": "*A realm ravaged by a demonic plague...*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*[Zombie Realm] [BitcoinVirus -> me] tpc3*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*[Zombie Realm] [BitcoinVirus -> me] dis3*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*[Zombie Realm] [BitcoinVirus -> me] acc3*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*[Zombie Realm] [BitcoinVirus -> me] cac3*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*[Zombie Realm] [BitcoinVirus -> me] tog3*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*[Zombie Realm] [BitcoinVirus -> me] lea3*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*[Zombie Realm] [BitcoinVirus -> me] mon3*",
       "except": "",
       "servers": [],
       "action": "IGNORE",
@@ -382,7 +445,7 @@
     },
     {
       "name": "Trappist",
-      "message": "*HashTrap has requested to teleport to you!*",
+      "message": "*BitcoinVirus has requested to teleport to you!*",
       "except": "",
       "servers": [],
       "action": "IGNORE",
@@ -671,7 +734,7 @@
     },
     {
       "name": "Trappist",
-      "message": "*HashTrap** teleport request*",
+      "message": "*BitcoinVirus** teleport request*",
       "except": "",
       "servers": [],
       "action": "IGNORE",
@@ -689,7 +752,7 @@
     },
     {
       "name": "Trappist",
-      "message": "[**Realm] [HashTrap** tpc",
+      "message": "[**Realm] [BitcoinVirus** tpc",
       "except": "",
       "servers": [],
       "action": "AUTO_TEXT",
@@ -699,7 +762,7 @@
     },
     {
       "name": "Trappist",
-      "message": "(!)**HashTrap accepted your teleport request!",
+      "message": "(!)**BitcoinVirus accepted your teleport request!",
       "except": "",
       "servers": [],
       "action": "IGNORE",
@@ -708,7 +771,7 @@
     },
     {
       "name": "Trappist",
-      "message": "(!) You sent a teleportation request to**HashTrap!",
+      "message": "(!) You sent a teleportation request to**BitcoinVirus!",
       "except": "",
       "servers": [],
       "action": "IGNORE",
@@ -717,7 +780,7 @@
     },
     {
       "name": "Trappist",
-      "message": "[Zombie Realm] [HashTrap -\u003e me] dis3",
+      "message": "[Zombie Realm] [BitcoinVirus -\u003e me] dis3",
       "except": "",
       "servers": [],
       "action": "IGNORE",
