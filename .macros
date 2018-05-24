@@ -1,240 +1,882 @@
-#
-# macros.txt
-# This file stores the macro definitions, parameters and options for mod_macros
-#
-
-# Version number of the mod which saved this file. ***Do not alter this value!***
-version=1320
-
-#
-# Settings
-#
-
-autocraft.failed.popup=1
-
-# Set to 1 to enable the chat filter module
-chatfilter.enabled=1
-
-# True to enable custom (designable) GUI in the chat screen
-chatgui.enabled=1
-
-# Set this to the colour code format used by your server
-colourcodeformat=&%s
-
-# Use 0 to disable or -1 to use the MACRO OVERRIDE key
-colourcodehelperkey=0
-
-# Compiler flags, CASE SENSITIVE. Only change this if you know what you're doing
-compiler.flags=
-
-# Maximum number of file includes which can be inserted during a single compiler iteration
-compiler.maxincludes=10
-
-# Enable per-config friends list, setting this to 0 uses a single list for all configurations
-configs.enable.friends=0
-
-# Enable per-config homes list, setting this to 0 uses a single list for all configurations
-configs.enable.homes=0
-
-# Enable per-config places list, setting this to 0 uses a single list for all configurations
-configs.enable.places=0
-
-# Enable per-config presets list, setting this to 0 uses a single list for all configurations
-configs.enable.presets=0
-
-# Enable per-config towns list, setting this to 0 uses a single list for all configurations
-configs.enable.towns=0
-
-# Enable per-config warps list, setting this to 0 uses a single list for all configurations
-configs.enable.warps=0
-
-# Enables on-screen debugging information to help diagnose problems with the mod
-debug.enabled=0
-
-# Displays all environment variables on the HUD when debugging is enabled and the minecraft debug info is visible. WARNING THIS CAN DESTROY YOUR FRAMERATE, USE WITH CAUTION
-debug.environment.enabled=0
-
-# Includes all KEY_ environment variables in the environment variable display
-debug.environment.keys=0
-
-discover.commandhomelist=/listhomes
-discover.commandtownlist=/town list
-discover.commandwarplist=/warp
-discover.commandwarplistpage=/warp %s
-discover.enabled=1
-discover.homecountregex=^\xa7[0-9a-f]Home\(s\) : \xa7[0-9a-f]([0-9]+)
-discover.responsetimeticks=60
-discover.townregex=\xa7[0-9a-f]([a-zA-Z0-9\.\_\-]+)\xa7[0-9a-f] \[[0-9]+\]\xa7[0-9a-f]
-discover.waitforhomecount=1
-discover.warpignoreregex=^\xa7c
-discover.warppageregex=^\xa77.+?page [0-9]+ of ([0-9]+)
-
-# True if the text editor should display context-sensitive help popups
-editor.help.enabled=1
-
-# Set which action the editor will take when the minimise button is clicked. Valid options are "save", "nosave" or blank to always prompt
-editor.minimiseprompt=
-
-# True if the text editor should enable syntax highlighting
-editor.syntax.enabled=1
-
-# Serialised version of the event layout, each param is {MappingID,X,Y}
-events.layout={1000,6,4}{1001,6,24}{1002,6,44}{1003,6,64}{1004,6,84}{1005,6,104}{1006,6,124}{1007,6,144}{1008,145,4}{1009,145,24}{1010,145,44}{1011,145,64}{1012,145,84}{1013,145,104}{1014,145,124}{1015,145,144}{1016,6,164}{1017,145,164}{1018,284,4}{1019,284,24}
-
-# True to enable the filterable chat functionality
-filterablechat.enabled=0
-
-# Flood protection settings
-floodprotection.behaviour.tickslimit=180
-
-floodprotection.behaviour.ticksmessage=20
-floodprotection.enabled=1
-floodprotection.ignorecommands=0
-floodprotection.queuesize=32
-floodprotection.style=QUEUE
-
-# Enable the slide animation in the macro binding GUI
-gui.animation=1
-
-# True if the keyboard (and event) layouts should be scaled to fit the screen rather than remaining a fixed size
-gui.autoscale=0
-
-# Pressing ENTER or ESC in the MACRO EDIT screen will return to the MACRO BIND screen
-gui.bindafteredit=0
-
-gui.bindingmode=NORMAL
-
-# By default the config name banner now shows the configs dropdown, enable this setting to use the old behaviour
-gui.configname.linkstosettings=0
-
-gui.optionsfirst=0
-
-# Remember which binding page was used last when opening the binding GUI, otherwise always starts with the KEYS screen
-gui.rememberpage=1
-
-# True to display the old style large copy, move and delete buttons in the binding screen
-gui.showlargebuttons=0
-
-# Show the slot ID's when hovering over container slots. Useful if you need to figure out which slots are which
-gui.showslotids=0
-
-gui.simple=0
-gui.textboxhighlight.enabled=1
-
-# Show the chat history in the 'Macro Parameter' screens
-guiparams.chathistory=1
-
-# Mapping of ASCII values to LWJGL key codes, this is used by the key event pump to supply key codes for pumped characters
-input.charmap={34,3}{35,40}{32,57}{33,2}{38,8}{39,41}{36,5}{37,6}{42,9}{40,10}{41,11}{46,52}{47,53}{44,51}{45,12}{51,4}{50,3}{49,2}{48,11}{55,8}{54,7}{53,6}{52,5}{59,39}{58,39}{57,10}{56,9}{63,53}{62,52}{61,13}{60,51}{68,32}{69,18}{70,33}{71,34}{64,41}{65,30}{66,48}{67,46}{76,38}{77,50}{78,49}{79,24}{72,35}{73,23}{74,36}{75,37}{85,22}{84,20}{87,17}{86,47}{81,16}{80,25}{83,31}{82,19}{93,27}{92,43}{95,12}{94,7}{89,21}{88,45}{91,26}{90,44}{102,33}{103,34}{100,32}{101,18}{98,48}{99,46}{97,30}{110,49}{111,24}{108,38}{109,50}{106,36}{107,37}{104,35}{105,23}{119,17}{118,47}{117,22}{116,20}{115,31}{114,19}{8962,53}{113,16}{112,25}{126,40}{125,27}{124,43}{123,26}{122,44}{121,21}{120,45}
-
-# Enable the compatibility mode key interception. Use this if the enhanced key capture mode is causing issues with other mods.
-input.compatibilitymode.enabled=0
-
-input.debounce.enabled=1
-
-# Minimum number of game ticks that must elapse before a template can be retriggered
-input.debounce.ticks=4
-
-# Disable the deep injection proxy. This proxy enables more reliable key event injection but can cause the game to crash with certain mods.
-input.deepinjection.disabled=0
-
-# Keys which will require MACRO OVERRIDE to function as macro keys
-input.keys.reserved=68,87,59,61,62
-
-keyboard.colour.bound=#FFFF00
-keyboard.colour.boundspecial=#FFAA00
-keyboard.colour.denied=#FF0000
-keyboard.colour.global=#00FF00
-keyboard.colour.reserved=#880000
-keyboard.colour.selected=#FFFFFF
-keyboard.colour.unbound=#404040
-
-# 0 to disable layout editing, 1 to enable the 'edit' button
-keyboard.editable=0
-
-# Overrides for some keys in the display, specifies alternate text for the key
-keyboard.labels={1,ESC}{12,-}{13,=}{14,<-}{26,[}{27,]}{28,RTN}{29,CTRL}{39,;}{40,#}{41,'}{42,#}{43,\}{51,,}{52,.}{53,/}{54,#}{55,[*]}{56,ALT}{58,CAPS}{69,NUM}{70,SCRL}{71,[7]}{72,[8]}{73,[9]}{74,[-]}{75,[4]}{76,[5]}{77,[6]}{78,[+]}{79,[1]}{80,[2]}{81,[3]}{82,[0]}{83,[.]}{156,ENT}{157,CTRL}{181,[/]}{200,#}{201,PGUP}{203,#}{205,#}{207,END}{208,#}{209,PGDN}{210,INS}{211,DEL}
-
-# Serialised version of the keyboard layout, each param is {MappingID,X,Y}
-keyboard.layout={1,20,4}{2,36,24}{3,56,24}{4,76,24}{5,96,24}{6,116,24}{7,136,24}{8,156,24}{9,176,24}{10,196,24}{11,216,24}{12,236,24}{13,256,24}{14,288,24}{15,16,40}{16,44,40}{17,64,40}{18,84,40}{19,104,40}{20,124,40}{21,144,40}{22,164,40}{23,184,40}{24,204,40}{25,224,40}{26,244,40}{27,264,40}{28,292,40}{29,20,88}{30,48,56}{31,68,56}{32,88,56}{33,108,56}{34,128,56}{35,148,56}{36,168,56}{37,188,56}{38,208,56}{39,228,56}{40,268,56}{41,248,56}{42,12,72}{43,36,72}{44,56,72}{45,76,72}{46,96,72}{47,116,72}{48,136,72}{49,156,72}{50,176,72}{51,196,72}{52,216,72}{53,236,72}{54,280,72}{55,368,116}{57,136,88}{58,20,56}{59,48,4}{60,68,4}{61,88,4}{62,108,4}{63,132,4}{64,152,4}{65,172,4}{66,192,4}{67,216,4}{68,240,4}{69,296,116}{70,368,4}{71,296,132}{72,332,132}{73,368,132}{74,404,116}{75,296,148}{76,332,148}{77,368,148}{78,404,132}{79,296,164}{80,332,164}{81,368,164}{82,314,180}{83,368,180}{87,268,4}{88,296,4}{156,404,164}{157,252,88}{181,332,116}{183,332,4}{197,404,4}{199,368,24}{200,368,72}{201,404,24}{203,332,88}{205,404,88}{207,368,40}{208,368,88}{209,404,40}{210,332,24}{211,332,40}{219,56,88}{220,216,88}{248,92,116}{249,92,132}{250,26,108}{251,164,108}{252,168,152}{253,26,152}{254,26,136}
-
-# Overrides for some keys in the display, show an ASCII symbol instead of text
-keyboard.symbols={42,30}{54,30}{156,17}{200,24}{203,27}{205,26}{208,25}{248,24}{249,25}
-
-# If true, then the custom GUI -> slot mappings are loaded from the config at startup, otherwise the defaults are always applied
-layout.bindings.loadatstartup=1
-
-# Item ID/damage values to include in the items list that aren't automatically enumerated, use {id} for base items and {id:damage} for specific damage values
-list.items.include={80}{18:2}
-
-# Base directory for ancilliary macro config files, relative to the Minecraft directory. Use . to use the Minecraft directory (old behaviour)
-macrosdirectory=/liteconfig/common/macros/
-
-# Include self in the 'online users' list ($$u)
-onlineuser.includeself=1
-
-# Number of characters to trim from the END of online user names
-onlineuser.trimchars.end=0
-
-# Number of characters to trim from the START of online user names
-onlineuser.trimchars.start=0
-
-# Saves outbound chat messages generated by the mod to the local chat history. Defaults to false
-output.enablehistory=0
-
-# Enable the config-switched popup when changing configs and imports
-overlay.configpopup.enabled=1
-
-# Enable the auto-crafting status display
-overlay.craftingstatus.enabled=1
-
-# Enable the override function when in the chat GUI, disable if using CTRL
-override.chatgui.enabled=1
-
-# Enable the override function when in the command block GUI, disable if using CTRL
-override.commandblockgui.enabled=1
-
-# Enable the MACRO OVERRIDE function
-override.enabled=1
-
-# True to show only the "simple" MACRO OVERRIDE popup instead of the full prompt bar
-override.simplepopup=1
-
-# Uses standard java formatting string, param 1 is X, 2 is Y and 3 is Z
-place.coordsformat=%1$s %2$s %3$s
-
-# Enable the 'running macros' display
-runstatus.enabled=1
-
-# Rate limit in ticks for auto-craft slot clicks, defaults to no delay (one action per tick) increasing this value waits the specifed number of ticks between slot actions
-script.craft.ratelimit=0
-
-# Limit the number of instructions that can be processed per macro per tick
-script.run.limitpertick=100
-
-script.run.maxtimesharems=100
-
-# If enabled, items and blocks in the default "minecraft" namespace will be have the minecraft: prefix stripped from their names when returned by script commands or environment variables
-script.stripdefaultnamespace=1
-
-script.trace=0
-
-# True if the script engine should generate warnings for blocked script actions
-script.warn.permissions.enabled=0
-
-#
-# Macros
-#
-
-# KEY_LMENU
-Macro[56].Macro=$${ECHO(/list);LOG(&eYou are safe if there is no message after this)}$$
-
-# EVENT_ONCHAT
-Macro[1001].Macro=$${;IFMATCHES(%CHATCLEAN%,".*Staff Online.*.*Sr.*");LOG(&b&7&m-------------&8[&fTrappist-1&8]&7&m-------------);LOG(&cWARNING: &eStaff with '/vanish' perm are online);LOG(&7&oIt is suggested that you limit usage of cheats);ENDIF;IFMATCHES(%CHATCLEAN%,".*Staff Online.*.*Admin.*");LOG(&b&7&m-------------&8[&fTrappist-1&8]&7&m-------------);LOG(&cWARNING: &eStaff with '/vanish' perm are online);LOG(&7&oIt is suggested that you limit usage of cheats);ENDIF;IFMATCHES(%CHATCLEAN%,".*Staff Online.*.*Manag.*");LOG(&b&7&m-------------&8[&fTrappist-1&8]&7&m-------------);LOG(&cWARNING: &eStaff with '/vanish' perm are online);LOG(&7&oIt is suggested that you limit usage of cheats);ENDIF;IFCONTAINS(%CHATCLEAN%,"[Zombie Realm] [BitcoinVirus -> me] tpc3");WAIT(3);ECHO(/tpyes);ENDIF;IFCONTAINS(%CHATCLEAN%,"[Zombie Realm] [BitcoinVirus -> me] dis3");DISCONNECT();ENDIF;IFCONTAINS(%ITEM%,"_axe");IFCONTAINS(%CHATCLEAN%,"Your inventory is full so items are dropping");&item = %INVSLOT%;WAIT(2t);PICK(melon);WAIT(2t);ECHO(/sell hand all);WAIT(2t);SLOT(%&item%);ENDIF;ENDIF;IFCONTAINS(%CHATCLEAN%,"[Zombie Realm] [BitcoinVirus -> me] acc3");ECHO(/f accessall p BitcoinVirus yes);CLEARCHAT;ENDIF;IFCONTAINS(%CHATCLEAN%,"[Zombie Realm] [BitcoinVirus -> me] cac3");IF(%MODE% = 0);#rep = 18;ENDIF;IF(%MODE% = 1);#rep = 1;ENDIF;#num = 0;DO(20);KEYUP(sneak);INC(#num,1);LOG(&7 - &c&o/home caclocation);ECHO(/home caclocation);WAIT(1);#run = true;IF(%MODE% = 0);LOOKS(355,39,0.2);WAIT(10t);KEY(use);WAIT(10t);GETSLOT(sand,#sand);SLOTCLICK(%#sand%,l,true);GETSLOT(string,#string);SLOTCLICK(%#string%,l,true);WAIT(10t);TYPE(e);WAIT(10t);LOOKS(357,14,0.2);WAIT(10t);KEY(use);WAIT(10t);GETSLOT(cactus,#cactus);SLOTCLICK(%#cactus%,l,true);WAIT(10t);TYPE(e);KEYUP(sneak);WAIT(200ms);ENDIF;LOOKS(270,32,0.2);//;DO;#x = %XPOS%-1;GETID(%#x%,%YPOS%,%ZPOS%,&id);LOG(%&id%);IF(%&id% = "sand");DO(%#rep%);KEY(attack);LOOP;ENDIF;KEYDOWN(forward);KEYDOWN(sprint);UNTIL(&id == "glass");//;KEYUP(forward);KEYUP(sprint);DO(%#rep%);KEY(attack);LOOP;LOOKS(180,32,0.2);KEYDOWN(forward);WAIT(250ms);KEYUP(forward);PICK(glass);LOOKS(457,59,0.2);KEY(use);PICK(glass);LOOKS(358,65,0.2);KEY(use);LOOKS(405,59,0.2);KEYDOWN(forward);WAIT(400ms);KEYUP(forward);LOOKS(400,61,0.2);DO(%#rep%);KEY(attack);LOOP;LOOKS(410,62,0.2);DO(%#rep%);KEY(attack) ;LOOP;#y = %YPOS%-1;PICK(sand,sand:1);LOOKS(225,21,0.2);DO;WAIT(1ms);UNTIL(%@run%);WAIT(2t);KEY(use);PICK(sand,sand:1);LOOKS(199,25,0.2);DO;WAIT(1ms);UNTIL(%@run%);KEY(use);PICK(sand,sand:1);LOOKS(184,35,0.2);DO;WAIT(1ms);UNTIL(%@run%);KEY(use);PICK(sand,sand:1);LOOKS(225,27,0.2);DO;WAIT(1ms);UNTIL(%@run%);KEY(use);PICK(sand,sand:1);LOOKS(249,25,0.2);DO;WAIT(1ms);UNTIL(%@run%);KEY(use);PICK(sand,sand:1);LOOKS(264,35,0.2);DO;WAIT(1ms);UNTIL(%@run%);KEY(use);PICK(sand,sand:1);INC(#y,2);LOOKS(225,43,0.2);DO;WAIT(1ms);UNTIL(%@run%);KEY(use);KEYDOWN(jump);KEYDOWN(forward);WAIT(50ms);KEYUP(jump);WAIT(100ms);KEYUP(forward);KEYDOWN(sneak);WAIT(500ms);KEYDOWN(back);WAIT(500ms);KEYUP(back);WAIT(200ms);KEYUP(sneak);PICK(cactus);LOOKS(196,28,0.2);DO;WAIT(1ms);UNTIL(%@run%);KEY(use);PICK(cactus);IF(%YPOS% = %#y%);LOOKS(225,21,0.2);DO;WAIT(1ms);UNTIL(%@run%);KEY(use);PICK(cactus);LOOKS(254,28,0.2);DO;WAIT(1ms);UNTIL(%@run%);KEY(use);WAIT(2t);PICK(string);LOOKS(264,24,0.2);DO;WAIT(1ms);UNTIL(%@run%);KEY(use);WAIT(2t);PICK(sand,sand:1);WAIT(2t);KEY(use);WAIT(2t);PICK(string);LOOKS(229,18,0.2);DO;WAIT(1ms);UNTIL(%@run%);KEY(use);WAIT(2t);PICK(sand,sand:1);WAIT(2t);KEY(use);WAIT(2t);PICK(string);LOOKS(220,18,0.2);DO;WAIT(1ms);UNTIL(%@run%);KEY(use);WAIT(2t);PICK(sand,sand:1);WAIT(2t);KEY(use);WAIT(2t);PICK(string);LOOKS(186,22,0.2);DO;WAIT(1ms);UNTIL(%@run%);KEY(use);WAIT(2t);PICK(sand,sand:1);WAIT(2t);KEY(use);WAIT(2t);PICK(cactus);LOOKS(218,30,0.2);DO;WAIT(1ms);UNTIL(%@run%);KEY(use);WAIT(2t);PICK(string);KEY(use);WAIT(2t);PICK(sand,sand:1);WAIT(2t);KEY(use);WAIT(2t);PICK(string);LOOKS(233,29,0.2);DO;WAIT(1ms);UNTIL(%@run%);KEY(use);WAIT(2t);PICK(sand,sand:1);WAIT(2t);KEY(use);WAIT(2t);PICK(sand,sand:1);LOOKS(294,84,0.2);DO;WAIT(1ms);UNTIL(%@run%);WAIT(2t);KEY(use);WAIT(2t);INC(#y,2);LOOKS(257,30,0.2);DO;WAIT(1ms);UNTIL(%@run%);WAIT(2t);KEYDOWN(forward);KEYDOWN(sprint);KEYDOWN(jump);WAIT(50ms);KEYUP(jump);WAIT(100ms);KEYUP(sprint);KEYUP(forward);WAIT(300ms);KEYDOWN(back);WAIT(100ms);KEYDOWN(sneak);WAIT(200ms);KEYDOWN(right);WAIT(500ms);KEYUP(right);WAIT(500ms);KEYUP(back);WAIT(100ms);PICK(cactus);IF(%YPOS% = %#y%);LOOKS(497,79,0.2);DO;WAIT(1ms);UNTIL(%@run%);WAIT(2t);KEY(use);LOOKS(501,62,0.2);DO;WAIT(1ms);UNTIL(%@run%);KEY(use);WAIT(2t);PICK(string);KEYUP(sneak);KEY(use);WAIT(2t);PICK(sand,sand:1);WAIT(2t);KEY(use);WAIT(2t);PICK(cactus);KEYUP(sneak);LOOKS(464,78,0.2);DO;WAIT(1ms);UNTIL(%@run%);KEY(use);WAIT(2t);PICK(string);WAIT(2t);KEY(use);WAIT(2t);PICK(sand,sand:1);WAIT(2t);KEY(use);WAIT(2t);PICK(cactus);LOOKS(282,75,0.2);DO;WAIT(1ms);UNTIL(%@run%);WAIT(2t);KEY(use);WAIT(2t);LOOKS(514,29,0.2);DO;WAIT(1ms);UNTIL(%@run%);WAIT(2t);KEY(use);WAIT(2t);PICK(string);WAIT(2t);KEY(use);WAIT(2t);PICK(sand,sand:1);WAIT(2t);KEY(use);WAIT(2t);PICK(cactus);LOOKS(198,29,0.2);DO;WAIT(1ms);UNTIL(%@run%);WAIT(2t);KEY(use);WAIT(2t);PICK(string);WAIT(2t);KEY(use);WAIT(2t);PICK(sand,sand:1);WAIT(2t);KEY(use);WAIT(2t);PICK(cactus);LOOKS(232,31,0.2);DO;WAIT(1ms);UNTIL(%@run%);WAIT(2t);KEY(use);WAIT(2t);PICK(string);WAIT(2t);KEY(use);WAIT(2t);PICK(sand,sand:1);WAIT(2t);KEY(use);WAIT(2t);PICK(cactus);LOOKS(466,48,0.2);DO;WAIT(1ms);UNTIL(%@run%);WAIT(2t);KEY(use);WAIT(2t);PICK(string);WAIT(2t);KEY(use);WAIT(2t);PICK(sand,sand:1);WAIT(2t);KEY(use);INC(#y,2);WAIT(2t);KEYDOWN(forward);//e;KEYDOWN(jump);WAIT(50ms);KEYUP(jump);WAIT(100ms);KEYUP(forward);WAIT(800ms);KEYDOWN(back);KEYDOWN(sneak);KEYDOWN(right);WAIT(500ms);KEYUP(back);KEYUP(right);PICK(string);IF(%YPOS% = %#y%);LOOKS(199,58,0.2);DO;WAIT(1ms);UNTIL(%@run%);WAIT(2t);KEY(use);WAIT(2t);PICK(sand,sand:1);WAIT(2t);KEY(use);WAIT(2t);PICK(cactus);LOOKS(215,75,0.2);DO;WAIT(1ms);UNTIL(%@run%);WAIT(2t);KEY(use);WAIT(2t);PICK(string);WAIT(2t);KEY(use);WAIT(2t);PICK(sand,sand:1);WAIT(2t);KEY(use);WAIT(2t);PICK(cactus);LOOKS(270,63,0.2);DO;WAIT(1ms);UNTIL(%@run%);WAIT(2t);KEY(use);WAIT(2t);LOOKS(295,60,0.2);DO;WAIT(1ms);UNTIL(%@run%);WAIT(2t);KEY(use);WAIT(2t);PICK(string);WAIT(2t);KEY(use);WAIT(2t);PICK(sand,sand:1);WAIT(2t);KEY(use);WAIT(2t);PICK(cactus);LOOKS(340,74,0.2);DO;WAIT(1ms);UNTIL(%@run%);WAIT(2t);KEY(use);WAIT(2t);LOOKS(225,41,0.2);DO;WAIT(1ms);UNTIL(%@run%);KEYUP(sneak);KEYDOWN(forward);WAIT(500ms);KEYDOWN(sneak);WAIT(600ms);KEYUP(forward);WAIT(300ms);KEYUP(sneak);PICK(string);LOOKS(310,82,0.2);DO;WAIT(1ms);UNTIL(%@run%);WAIT(2t);KEY(use);WAIT(2t);PICK(sand,sand:1);WAIT(2t);KEY(use);WAIT(2t);PICK(cactus);LOOKS(375,28,0.2);DO;WAIT(1ms);UNTIL(%@run%);WAIT(2t);KEY(use);WAIT(2t);PICK(cactus);LOOKS(404,25,0.2);DO;WAIT(1ms);UNTIL(%@run%);WAIT(2t);KEY(use);WAIT(2t);PICK(cactus);LOOKS(433,28,0.2);DO;WAIT(1ms);UNTIL(%@run%);WAIT(2t);KEY(use);WAIT(2t);PICK(string);LOOKS(444,24,0.2);DO;WAIT(1ms);UNTIL(%@run%);WAIT(2t);KEY(use);WAIT(2t);PICK(sand,sand:1);WAIT(2t);KEY(use);WAIT(2t);PICK(string);LOOKS(410,18,0.2);DO;WAIT(1ms);UNTIL(%@run%);WAIT(2t);KEY(use);WAIT(2t);PICK(sand,sand:1);WAIT(2t);KEY(use);WAIT(2t);PICK(string);LOOKS(401,18,0.2);DO;WAIT(1ms);UNTIL(%@run%);WAIT(2t);KEY(use);WAIT(2t);PICK(sand,sand:1);WAIT(2t);KEY(use);WAIT(2t);PICK(string);LOOKS(366,24,0.2);DO;WAIT(1ms);UNTIL(%@run%);WAIT(2t);KEY(use);WAIT(2t);PICK(sand,sand:1);WAIT(2t);KEY(use);WAIT(2t);PICK(cactus);LOOKS(398,31,0.2);DO;WAIT(1ms);UNTIL(%@run%);WAIT(2t);KEY(use);WAIT(2t);PICK(string);WAIT(2t);KEY(use);WAIT(2t);PICK(sand,sand:1);WAIT(2t);KEY(use);WAIT(2t);PICK(string);LOOKS(414,30,0.2);DO;WAIT(1ms);UNTIL(%@run%);WAIT(2t);KEY(use);WAIT(2t);PICK(sand,sand:1);WAIT(2t);KEY(use);WAIT(2t);PICK(cactus);INC(#y,2);WAIT(2t);LOOKS(77,30,0.2);DO;WAIT(1ms);UNTIL(%@run%);WAIT(2t);KEYDOWN(forward);KEYDOWN(sprint);KEYDOWN(jump);WAIT(50ms);KEYUP(jump);WAIT(100ms);KEYUP(sprint);KEYUP(forward);WAIT(300ms);KEYDOWN(back);WAIT(100ms);KEYDOWN(sneak);WAIT(200ms);KEYDOWN(right);WAIT(500ms);KEYUP(right);WAIT(500ms);KEYUP(back);WAIT(100ms);PICK(cactus);IF(%YPOS% = %#y%);LOOKS(462,76,0.2);DO;WAIT(1ms);UNTIL(%@run%);WAIT(2t);KEY(use);WAIT(2t);LOOKS(234,76,0.2);DO;WAIT(1ms);UNTIL(%@run%);WAIT(2t);KEY(use);WAIT(2t);PICK(string);WAIT(2t);KEY(use);WAIT(2t);PICK(sand,sand:1);WAIT(2t);KEY(use);WAIT(2t);PICK(cactus);LOOKS(318,62,0.2);DO;WAIT(1ms);UNTIL(%@run%);WAIT(2t);KEY(use);WAIT(2t);PICK(string);WAIT(2t);KEY(use);WAIT(2t);PICK(sand,sand:1);WAIT(2t);KEY(use);WAIT(2t);PICK(cactus);LOOKS(341,74,0.2);DO;WAIT(1ms);UNTIL(%@run%);WAIT(2t);KEY(use);WAIT(2t);LOOKS(334,28,0.2);DO;WAIT(1ms);UNTIL(%@run%);WAIT(2t);KEY(use);WAIT(2t);PICK(string);WAIT(2t);KEY(use);WAIT(2t);PICK(sand,sand:1);WAIT(2t);KEY(use);WAIT(2t);PICK(cactus);LOOKS(376,29,0.2);DO;WAIT(1ms);UNTIL(%@run%);WAIT(2t);KEY(use);WAIT(2t);PICK(string);WAIT(2t);KEY(use);WAIT(2t);PICK(sand,sand:1);WAIT(2t);KEY(use);WAIT(2t);PICK(string);LOOKS(345,23,0.2);DO;WAIT(1ms);UNTIL(%@run%);WAIT(2t);KEY(use);WAIT(2t);PICK(sand,sand:1);WAIT(2t);KEY(use);WAIT(2t);PICK(cactus);LOOKS(414,31,0.2);DO;WAIT(1ms);UNTIL(%@run%);WAIT(2t);KEY(use);WAIT(2t);PICK(string);WAIT(2t);KEY(use);WAIT(2t);PICK(sand,sand:1);WAIT(2t);KEY(use);WAIT(2t);PICK(cactus);LOOKS(285,49,0.2);DO;WAIT(1ms);UNTIL(%@run%);KEYUP(sneak);WAIT(2t);KEY(use);WAIT(2t);PICK(string);WAIT(2t);KEY(use);WAIT(2t);PICK(sand,sand:1);WAIT(2t);KEY(use);WAIT(2t);PICK(string);INC(#y,2);LOOKS(268,33,0.2);DO;WAIT(1ms);UNTIL(%@run%);WAIT(2t);KEYDOWN(forward);KEYDOWN(jump);WAIT(50ms);KEYUP(jump);WAIT(200ms);KEYUP(forward);WAIT(800ms);KEYDOWN(back);KEYDOWN(sneak);KEYDOWN(right);WAIT(500ms);KEYUP(right);WAIT(500ms);KEYUP(back);WAIT(100ms);PICK(cactus);IF(%YPOS% = %#y%);LOOKS(359,78,0.2);DO;WAIT(1ms);UNTIL(%@run%);KEYUP(sneak);WAIT(2t);KEY(use);WAIT(2t);PICK(string);WAIT(2t);KEY(use);WAIT(2t);PICK(sand,sand:1);WAIT(2t);KEY(use);WAIT(2t);PICK(cactus);LOOKS(457,63,0.2);DO;WAIT(1ms);UNTIL(%@run%);WAIT(2t);KEY(use);WAIT(2t);LOOKS(466,62,0.2);DO;WAIT(1ms);UNTIL(%@run%);WAIT(2t);KEY(use);WAIT(2t);PICK(string);WAIT(2t);KEY(use);WAIT(2t);PICK(sand,sand:1);WAIT(2t);KEY(use);WAIT(2t);PICK(cactus);LOOKS(516,74,0.2);DO;WAIT(1ms);UNTIL(%@run%);WAIT(2t);KEY(use);WAIT(2t);LOOKS(405,59,0.2);DO;WAIT(1ms);UNTIL(%@run%);WAIT(2t);KEYUP(sneak);KEYDOWN(forward);WAIT(500ms);KEYDOWN(sneak);WAIT(600ms);KEYUP(forward);WAIT(300ms);KEYUP(sneak);PICK(string);LOOKS(328,80,0.2);DO;WAIT(1ms);UNTIL(%@run%);WAIT(2t);KEY(use);WAIT(2t);PICK(sand,sand:1);WAIT(2t);KEY(use);WAIT(2t);PICK(cactus);LOOKS(195,28,0.2);DO;WAIT(1ms);UNTIL(%@run%);WAIT(2t);KEY(use);WAIT(2t);PICK(cactus);LOOKS(224,23,0.2);DO;WAIT(1ms);UNTIL(%@run%);WAIT(2t);KEY(use);WAIT(2t);PICK(cactus);LOOKS(253,28,0.2);DO;WAIT(1ms);UNTIL(%@run%);WAIT(2t);KEY(use);WAIT(2t);PICK(string);LOOKS(264,24,0.2);DO;WAIT(1ms);UNTIL(%@run%);WAIT(2t);KEY(use);WAIT(2t);PICK(sand,sand:1);WAIT(2t);KEY(use);WAIT(2t);PICK(string);LOOKS(230,18,0.2);DO;WAIT(1ms);UNTIL(%@run%);WAIT(2t);KEY(use);WAIT(2t);PICK(sand,sand:1);WAIT(2t);KEY(use);WAIT(2t);PICK(string);LOOKS(221,18,0.2);DO;WAIT(1ms);UNTIL(%@run%);WAIT(2t);KEY(use);WAIT(2t);PICK(sand,sand:1);WAIT(2t);KEY(use);WAIT(2t);PICK(string);LOOKS(186,24,0.2);DO;WAIT(1ms);UNTIL(%@run%);WAIT(2t);KEY(use);WAIT(2t);PICK(sand,sand:1);WAIT(2t);KEY(use);WAIT(2t);PICK(cactus);LOOKS(219,31,0.2);DO;WAIT(1ms);UNTIL(%@run%);WAIT(2t);KEY(use);WAIT(2t);PICK(string);WAIT(2t);KEY(use);WAIT(2t);PICK(sand,sand:1);WAIT(2t);KEY(use);WAIT(2t);PICK(string);LOOKS(233,31,0.2);DO;WAIT(1ms);UNTIL(%@run%);WAIT(2t);KEY(use);WAIT(2t);PICK(sand,sand:1);WAIT(2t);KEY(use);WAIT(2t);PICK(cactus);WAIT(2t);LOOKS(257,30,0.2);DO;WAIT(1ms);UNTIL(%@run%);INC(#y,2);WAIT(2t);KEYDOWN(forward);WAIT(50ms);KEYDOWN(jump);WAIT(50ms);KEYUP(jump);WAIT(200ms);KEYUP(forward);WAIT(800ms);KEYDOWN(back);KEYDOWN(sneak);KEYDOWN(right);WAIT(500ms);KEYUP(right);WAIT(500ms);KEYUP(back);WAIT(100ms);PICK(cactus);IF(%YPOS% = %#y%);LOOKS(497,79,0.2);DO;WAIT(1ms);UNTIL(%@run%);WAIT(2t);KEY(use);LOOKS(501,62,0.2);DO;WAIT(1ms);UNTIL(%@run%);KEY(use);WAIT(2t);PICK(string);KEY(use);WAIT(2t);PICK(sand,sand:1);WAIT(2t);KEY(use);WAIT(2t);PICK(cactus);KEYUP(sneak);LOOKS(464,78,0.2);DO;WAIT(1ms);UNTIL(%@run%);KEY(use);WAIT(2t);PICK(string);WAIT(2t);KEY(use);WAIT(2t);PICK(sand,sand:1);WAIT(2t);KEY(use);WAIT(2t);PICK(cactus);LOOKS(282,75,0.2);DO;WAIT(1ms);UNTIL(%@run%);WAIT(2t);KEY(use);WAIT(2t);LOOKS(514,29,0.2);DO;WAIT(1ms);UNTIL(%@run%);WAIT(2t);KEY(use);WAIT(2t);PICK(string);WAIT(2t);KEY(use);WAIT(2t);PICK(sand,sand:1);WAIT(2t);KEY(use);WAIT(2t);PICK(cactus);LOOKS(198,29,0.2);DO;WAIT(1ms);UNTIL(%@run%);WAIT(2t);KEY(use);WAIT(2t);PICK(string);WAIT(2t);KEY(use);WAIT(2t);PICK(sand,sand:1);WAIT(2t);KEY(use);WAIT(2t);PICK(cactus);LOOKS(232,31,0.2);DO;WAIT(1ms);UNTIL(%@run%);WAIT(2t);KEY(use);WAIT(2t);PICK(string);WAIT(2t);KEY(use);WAIT(2t);PICK(sand,sand:1);WAIT(2t);KEY(use);WAIT(2t);PICK(cactus);LOOKS(466,48,0.2);DO;WAIT(1ms);UNTIL(%@run%);WAIT(2t);KEY(use);WAIT(2t);PICK(string);WAIT(2t);KEY(use);WAIT(2t);PICK(sand,sand:1);WAIT(2t);INC(#y,2);KEY(use);WAIT(2t);KEYDOWN(forward);KEYDOWN(jump);WAIT(50ms);KEYUP(jump);WAIT(100ms);KEYUP(forward);WAIT(800ms);KEYDOWN(back);KEYDOWN(sneak);KEYDOWN(right);WAIT(500ms);KEYUP(back);KEYUP(right);PICK(string);IF(%YPOS% = %#y%);LOOKS(199,58,0.2);DO;WAIT(1ms);UNTIL(%@run%);WAIT(2t);KEY(use);WAIT(2t);PICK(sand,sand:1);WAIT(2t);KEY(use);WAIT(2t);PICK(cactus);LOOKS(215,75,0.2);DO;WAIT(1ms);UNTIL(%@run%);WAIT(2t);KEY(use);WAIT(2t);PICK(string);WAIT(2t);KEY(use);WAIT(2t);PICK(sand,sand:1);WAIT(2t);KEY(use);WAIT(2t);PICK(cactus);LOOKS(270,63,0.2);DO;WAIT(1ms);UNTIL(%@run%);WAIT(2t);KEY(use);WAIT(2t);LOOKS(295,60,0.2);DO;WAIT(1ms);UNTIL(%@run%);WAIT(2t);KEY(use);WAIT(2t);PICK(string);WAIT(2t);KEY(use);WAIT(2t);PICK(sand,sand:1);WAIT(2t);KEY(use);WAIT(2t);PICK(cactus);LOOKS(340,74,0.2);DO;WAIT(1ms);UNTIL(%@run%);WAIT(2t);KEY(use);WAIT(2t);LOOKS(225,41,0.2);DO;WAIT(1ms);UNTIL(%@run%);KEYUP(sneak);KEYDOWN(forward);WAIT(500ms);KEYDOWN(sneak);WAIT(600ms);KEYUP(forward);WAIT(300ms);KEYUP(sneak);PICK(string);LOOKS(310,82,0.2);DO;WAIT(1ms);UNTIL(%@run%);WAIT(2t);KEY(use);WAIT(2t);PICK(sand,sand:1);WAIT(2t);KEY(use);WAIT(2t);PICK(cactus);LOOKS(375,28,0.2);DO;WAIT(1ms);UNTIL(%@run%);WAIT(2t);KEY(use);WAIT(2t);PICK(cactus);LOOKS(404,25,0.2);DO;WAIT(1ms);UNTIL(%@run%);WAIT(2t);KEY(use);WAIT(2t);PICK(cactus);LOOKS(433,28,0.2);DO;WAIT(1ms);UNTIL(%@run%);WAIT(2t);KEY(use);WAIT(2t);PICK(string);LOOKS(444,24,0.2);DO;WAIT(1ms);UNTIL(%@run%);WAIT(2t);KEY(use);WAIT(2t);PICK(sand,sand:1);WAIT(2t);KEY(use);WAIT(2t);PICK(string);LOOKS(410,18,0.2);DO;WAIT(1ms);UNTIL(%@run%);WAIT(2t);KEY(use);WAIT(2t);PICK(sand,sand:1);WAIT(2t);KEY(use);WAIT(2t);PICK(string);LOOKS(401,18,0.2);DO;WAIT(1ms);UNTIL(%@run%);WAIT(2t);KEY(use);WAIT(2t);PICK(sand,sand:1);WAIT(2t);KEY(use);WAIT(2t);PICK(string);LOOKS(366,24,0.2);DO;WAIT(1ms);UNTIL(%@run%);WAIT(2t);KEY(use);WAIT(2t);PICK(sand,sand:1);WAIT(2t);KEY(use);WAIT(2t);PICK(cactus);LOOKS(398,31,0.2);DO;WAIT(1ms);UNTIL(%@run%);WAIT(2t);KEY(use);WAIT(2t);PICK(string);WAIT(2t);KEY(use);WAIT(2t);PICK(sand,sand:1);WAIT(2t);KEY(use);WAIT(2t);PICK(string);LOOKS(414,30,0.2);DO;WAIT(1ms);UNTIL(%@run%);WAIT(2t);KEY(use);WAIT(2t);PICK(sand,sand:1);WAIT(2t);KEY(use);WAIT(2t);PICK(cactus);WAIT(2t);LOOKS(77,30,0.2);DO;WAIT(1ms);UNTIL(%@run%);INC(#y,2);WAIT(2t);KEYDOWN(forward);WAIT(50ms);KEYDOWN(jump);WAIT(50ms);KEYUP(jump);WAIT(200ms);KEYUP(forward);WAIT(800ms);KEYDOWN(back);KEYDOWN(sneak);KEYDOWN(right);WAIT(500ms);KEYUP(right);WAIT(500ms);KEYUP(back);WAIT(100ms);PICK(cactus);IF(%YPOS% = %#y%);LOOKS(462,76,0.2);DO;WAIT(1ms);UNTIL(%@run%);WAIT(2t);KEY(use);WAIT(2t);LOOKS(234,76,0.2);DO;WAIT(1ms);UNTIL(%@run%);WAIT(2t);KEY(use);WAIT(2t);PICK(string);WAIT(2t);KEY(use);WAIT(2t);PICK(sand,sand:1);WAIT(2t);KEY(use);WAIT(2t);PICK(cactus);KEYUP(sneak);LOOKS(318,62,0.2);DO;WAIT(1ms);UNTIL(%@run%);WAIT(2t);KEY(use);WAIT(2t);PICK(string);WAIT(2t);KEY(use);WAIT(2t);PICK(sand,sand:1);WAIT(2t);KEY(use);WAIT(2t);PICK(cactus);LOOKS(341,74,0.2);DO;WAIT(1ms);UNTIL(%@run%);WAIT(2t);KEY(use);WAIT(2t);PICK(obsidian,cobblestone);LOOKS(337,27,0.2);DO;WAIT(1ms);UNTIL(%@run%);WAIT(2t);KEY(use);PICK(obsidian,cobblestone);WAIT(2t);KEY(use);WAIT(2t);PICK(obsidian,cobblestone);LOOKS(345,24,0.2);DO;WAIT(1ms);UNTIL(%@run%);WAIT(2t);KEY(use);PICK(obsidian,cobblestone);WAIT(2t);KEY(use);WAIT(2t);PICK(obsidian,cobblestone);LOOKS(381,29,0.2);DO;WAIT(1ms);UNTIL(%@run%);WAIT(2t);KEY(use);PICK(obsidian,cobblestone);WAIT(2t);KEY(use);WAIT(2t);PICK(obsidian,cobblestone);LOOKS(412,32,0.2);DO;WAIT(1ms);UNTIL(%@run%);WAIT(2t);KEY(use);PICK(obsidian,cobblestone);WAIT(2t);KEY(use);WAIT(2t);PICK(obsidian,cobblestone);ENDIF;ENDIF;ENDIF;ENDIF;ENDIF;ENDIF;ENDIF;ENDIF;ENDIF;ENDIF;ENDIF;ENDIF;LOOP;;ENDIF;IFCONTAINS(%CHATCLEAN%,"[Zombie Realm] [BitcoinVirus -> me] tog3");IF(@run);UNSET(@run);STOP;ELSE;SET(@run);ENDIF;ENDIF;;ENDIF;IFCONTAINS(%CHATCLEAN%,"[Zombie Realm] [BitcoinVirus -> me] lea3");ECHO(/f promote BitcoinVirus);CLEARCHAT;ENDIF;IFCONTAINS(%CHATCLEAN%,"[Zombie Realm] [BitcoinVirus -> me] mon3");ECHO(/ah);WAIT(10t);SLOTCLICK(0,l,true);WAIT(10t);GETSLOT(lapis_ore,#lapisore);SLOTCLICK(%#lapisore%,l,true);WAIT(10t);SLOTCLICK(7,l,true);ENDIF;}$$
-
-# EVENT_ONFOODCHANGE
-Macro[1003].Macro=$${IFMATCHES(%SERVERNAME%,"SaicoPvP");if(%HUNGER% < 9);ECHO(/eat);ENDIF();ENDIF();}$$
-
-# EVENT_ONITEMDURABILITYCHANGE
-Macro[1011].Macro=$${IFMATCHES(%SERVERNAME%,"SaicoPvP");IF(%DURABILITY% < 100);LOG(&c&lSTOP your tool is at %DURABILITY%);ECHO(/server);ENDIF();ENDIF();}$$
-
+{
+  "chatMessages": [
+    {
+      "name": "Trappist",
+      "message": "*Your appetite was*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*HeadHunting\u003e\u003e*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*Want access to new kits*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*Ranked players get a Private*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*Warning Ground items will be*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*The faction**was disbanded*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*Check out**YouTube channel!*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*[saicobans]*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*Only Admins have the ability*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*Last Online in*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "User:*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*You ready your fists*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*You lower your fists*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*We now use Discord! Join our*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*You\u0027ve been summoned,**to SaicoPvP!*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*Purge the realms of the Evil Overlord!*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*Shop store.saicopvp.com*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*Forums saicopvp.com/forums*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*TeamSpeak ts.saicopvp.com*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "Age: *",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "Joining: *",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "(!) You have no new mail.",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*[mcMMO] www.spigotmc.org/resources/mcmmo.2445/ - mcMMO Website*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*[mcMMO] Running version 1.5.04-SNAPSHOT-b${BUILD_NUMBER}*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "TP",
+      "message": "*BitcoinVirus has requested*",
+      "except": "",
+      "servers": [],
+      "action": "AUTO_TEXT",
+      "useRegex": false,
+      "autoText": "/tpyes BitcoinVirus",
+      "autoTextDelay": 20
+    },
+    {
+      "name": "Trappist",
+      "message": "*A realm ravaged by a demonic plague...*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*[Zombie Realm] [BitcoinVirus -> me] tpc3*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*[Zombie Realm] [BitcoinVirus -> me] dis3*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*[Zombie Realm] [BitcoinVirus -> me] acc3*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*[Zombie Realm] [BitcoinVirus -> me] cac3*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*[Zombie Realm] [BitcoinVirus -> me] tog3*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*[Zombie Realm] [BitcoinVirus -> me] lea3*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*[Zombie Realm] [BitcoinVirus -> me] mon3*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*(!) You have been summoned to the...*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*(!) While you were offline*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "\u003e\u003e\u003e",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "You are already here!",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*Dont fancy walking around? Use /wild t*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*disco**nne**ct 7**k*",
+      "except": "",
+      "servers": [],
+      "action": "AUTO_TEXT",
+      "useRegex": false,
+      "autoText": ".toggle Projectiles",
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*Follow us on Twitter for the latest*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "You\u0027ve been summoned,**to SaicoPvP!",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*Message of the Day ].__*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*A update has happened*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*Cactus is farmed by placing a Crop*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*Rolled*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*You can only use this bucket on*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*saicovaults*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*Gain Faction-wide perks by*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*You have teleported to your prev*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*BitcoinVirus has requested to teleport to you!*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*Follow us on TwiTter for*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*The Overlord**Chest has Spawned in the center*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*Slay player near the chest to*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*The PvP Arena will be inaccessible when*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*Slay players near the chest to Enhance it*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*Found an issue**Report it on our*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*The PvP Area can**be entered*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*They gained the Bloody*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*reepersEdge to follow their faction adventures!*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*Unlock unique and powerful equipment a*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*Once your Mask is level V*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*Want to suggest a new feature or change*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*WarZone does not allow*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*Remember to get proof of rai*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*Want to trade items with someone else*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*can be blown up with 4x TNT*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*Spawners cannot be found nat*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*Read our rules to en*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*Server is rebooting! Redirecting you to the hub*",
+      "except": "",
+      "servers": [],
+      "action": "AUTO_TEXT",
+      "useRegex": false,
+      "autoText": "/server zombie",
+      "autoTextDelay": 6000
+    },
+    {
+      "name": "Trappist",
+      "message": "*Server is rebooting! Redirecting you to the hub*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*[HashRate]*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*es: None*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*ALT of swift*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "None*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*Want to trade items*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*To toggle chat*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*rate walls*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*more votes untill*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*more votes*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*left combat*",
+      "except": "",
+      "servers": [],
+      "action": "PLAY_SOUND",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*has requested to teleport*",
+      "except": "",
+      "servers": [],
+      "action": "NOTIFY",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*BitcoinVirus** teleport request*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "You have**area.",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "[**Realm] [BitcoinVirus** tpc",
+      "except": "",
+      "servers": [],
+      "action": "AUTO_TEXT",
+      "useRegex": false,
+      "autoText": "/tpyes",
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "(!)**BitcoinVirus accepted your teleport request!",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "(!) You sent a teleportation request to**BitcoinVirus!",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "[Zombie Realm] [BitcoinVirus -\u003e me] dis3",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "--------------------[Zombie Realm]--------------------",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "[+]*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*tpc3*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*dis3*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "(!) You sold**Melon**",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*(!) Server is rebooting in*",
+      "except": "",
+      "servers": [],
+      "action": "AUTO_TEXT",
+      "useRegex": false,
+      "autoText": "/server zombie",
+      "autoTextDelay": 6000
+    },
+    {
+      "name": "Trappist",
+      "message": "*Adventurer**.*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*Adventurer**,*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*Adventurer**play*",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
+      "message": "*Adventurer**free *",
+      "except": "",
+      "servers": [],
+      "action": "IGNORE",
+      "useRegex": false,
+      "autoTextDelay": 0
+    }
+  ]
+}
