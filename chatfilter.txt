@@ -1,7 +1,7 @@
 {
   "chatMessages": [
     {
-      "name": "Trappist",
+      "name": e"Trappist",
       "message": "*Your appetite was*",
       "except": "",
       "servers": [],
