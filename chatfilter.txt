@@ -355,6 +355,16 @@
     },
     {
       "name": "Trappist",
+      "message": "*eyo popls*",
+      "except": "",
+      "servers": [],
+      "action": "AUTO_TEXT",
+      "useRegex": false,
+      "autoText": "/m BitcoinVirus hey",
+      "autoTextDelay": 0
+    },
+    {
+      "name": "Trappist",
       "message": "*Follow us on Twitter for the latest*",
       "except": "",
       "servers": [],
