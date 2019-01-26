@@ -854,15 +854,6 @@
     },
     {
       "name": "Trappist",
-      "message": "*Adventurer**.*",
-      "except": "",
-      "servers": [],
-      "action": "IGNORE",
-      "useRegex": false,
-      "autoTextDelay": 0
-    },
-    {
-      "name": "Trappist",
       "message": "*Adventurer**,*",
       "except": "",
       "servers": [],
